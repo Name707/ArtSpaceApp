@@ -1,44 +1,31 @@
 package com.example.artspace
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.layout.wrapContentWidth
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
-
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.artspace.ui.theme.ArtSpaceTheme
+import androidx.compose.material3.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,7 +57,7 @@ fun ArtSpaceImage(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFC3FBD8)),
+            .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
 
@@ -100,14 +87,30 @@ fun ArtSpaceImage(
                 .height(150.dp)
         )
 
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(100.dp)
-                .background(Color.Yellow)
-        ) {
+        CanvasInfo("Lemon Tree", "Empty Author (2023)")
 
-        }
     }
 
+}
+
+@Composable
+fun CanvasInfo(
+    canvasName: String,
+    authorAndDate: String,
+) {
+
+    Row(
+        modifier = Modifier
+            .width(270.dp)
+            .height(70.dp)
+            .background(Color(0xFFece8ff))
+            .padding(15.dp),
+        horizontalArrangement = Arrangement.Start,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+
+        Text(
+            text = "$canvasName\n$authorAndDate"
+        )
+    }
 }
