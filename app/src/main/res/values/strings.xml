@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ArtSpace</string>
-    <string name="Lemonade_tree">Lemonade Tree</string>
-    <string name="Lemonade_cup">Lemonade Cup</string>
-    <string name="Lemonade_drink">Lemonade Drink</string>
+    <string name="Lemon_tree">Lemon Tree;Author №1;2020</string>
+    <string name="Lemon_squeeze">Lemon Squeeze;Author №2;2021</string>
+    <string name="Lemonade_cup">Lemonade Cup;Author №3;2022</string>
+    <string name="Lemonade_drink">Lemonade Drink;Author №4;2023</string>
 </resources>
