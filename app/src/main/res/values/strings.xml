@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ArtSpace</string>
-    <string name="Lemon_tree">Lemon Tree;Author №1;2020</string>
-    <string name="Lemon_squeeze">Lemon Squeeze;Author №2;2021</string>
-    <string name="Lemonade_cup">Lemonade Cup;Author №3;2022</string>
-    <string name="Lemonade_drink">Lemonade Drink;Author №4;2023</string>
+    <string name="girl_with_peaches">«Девочка с персиками»;Серов В.А.;1887</string>
+    <string name="pearl_earring">«Девушка с жемчужной сережкой»;Ян Вермеер;1665</string>
+    <string name="persistence_of_memory">«Постоянство памяти»;Сальвадор Дали;1931</string>
+    <string name="starlight_night">«Звездная ночь»;Винсент Ван Гог;1889</string>
 </resources>
